@@ -21,14 +21,14 @@
 //! Now that shuttle is installed, you can create your first project using:
 //!
 //! ```bash
-//! cargo shuttle init --rocket my-rocket-app
+//! $ cargo shuttle init --rocket my-rocket-app
 //! ```
 //!
 //! By looking at the `Cargo.toml` file of the generated `my-rocket-app` project you will see it has been made to
 //! be a library crate with a `shuttle-service` dependency with the `web-rocket` feature on the `shuttle-service` dependency.
 //!
 //! ```toml
-//! shuttle-service = { version = "0.4.0", features = ["web-rocket"] }
+//! shuttle-service = { version = "0.4.1", features = ["web-rocket"] }
 //! ```
 //!
 //! A boilerplate code for your rocket project can also be found in `src/lib.rs`:
@@ -101,7 +101,7 @@
 //! Add the `sqlx-postgres` feature to the `shuttle-service` dependency, and add `sqlx` as a dependency with the `runtime-tokio-native-tls` and `postgres` features inside `Cargo.toml`:
 //!
 //! ```toml
-//! shuttle-service = { version = "0.4.0", features = ["web-rocket", "sqlx-postgres"] }
+//! shuttle-service = { version = "0.4.1", features = ["web-rocket", "sqlx-postgres"] }
 //! sqlx = { version = "0.5", features = ["runtime-tokio-native-tls", "postgres"] }
 //! ```
 //!
