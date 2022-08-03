@@ -108,7 +108,9 @@ impl Display for ProjectNameError {
 `{}` is an invalid project name. project name must
 1. not start or end with `-`.
 2. not contain any characters outside of the alphanumeric range, except for `-`.
-3. not be empty."#,
+3. not be empty.,
+4. not contain profanity.
+5. not be a reserved word."#,
                 name
             ),
         }
