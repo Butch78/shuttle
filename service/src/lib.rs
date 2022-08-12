@@ -235,9 +235,16 @@ pub use secrets::SecretStore;
 ))]
 pub mod aws;
 
+
+pub mod persist;
+pub use persist::Persist;
+
 #[cfg(feature = "codegen")]
 extern crate shuttle_codegen;
 #[cfg(feature = "codegen")]
+
+
+
 /// Helper macro that generates the entrypoint required by any service - likely the only macro you need in this crate.
 ///
 /// # Without shuttle managed services
