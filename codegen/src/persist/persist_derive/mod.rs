@@ -8,7 +8,6 @@ pub(crate) fn r#impl(input: TokenStream) -> TokenStream {
     impl_persist(&ast)
 }
 
-
 pub fn impl_persist(ast: &syn::DeriveInput) -> TokenStream {
     let name = &ast.ident;
 

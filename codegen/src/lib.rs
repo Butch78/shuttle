@@ -15,5 +15,3 @@ pub fn main(attr: TokenStream, item: TokenStream) -> TokenStream {
 pub fn derive_persist(input: TokenStream) -> TokenStream {
     persist::persist_derive::r#impl(input)
 }
-
-
